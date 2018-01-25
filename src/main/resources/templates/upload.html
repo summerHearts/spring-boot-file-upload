@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Spring Boot file upload example</h1>
+
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" /><br/><br/>
+    <input type="submit" value="Submit" />
+</form>
+
+
+<form action="/uploads" method="post" enctype="multipart/form-data">
+    文件1：<input type="file" name="file"/><br/>
+    文件2：<input type="file" name="file"/><br/>
+    文件3：<input type="file" name="file"/><br/>
+    <input type="submit" value="上传多个文件"/>
+</form>
+
+<a href="http://localhost:8080/downloadfile">下载</a>
+
+</body>
+</html>
